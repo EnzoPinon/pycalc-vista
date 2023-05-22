@@ -11,3 +11,11 @@ class Calculator:
     def multiply(self, num1, num2):
         produce = num1 * num2
         return produce
+    
+    def divide(self, num1, num2):
+        try:
+            quotient = num1 / num2
+            return quotient
+        except ZeroDivisionError:
+            quotient = 'error'
+            return quotient

@@ -66,6 +66,12 @@ while not stop_counter is True:
 
             if num1 is 'invalid' or num2 is 'invalid':
                 print("one of the inputs are invalid. Please try again.")
+            else:
+                result = calc.divide(num1, num2)
+                if result is 'error':
+                    print("Number cannot be divided by zero nor zero cannot divide itself. try again.")
+                else:
+                    new_ui.showResults(selection, num1, num2, result)
         if selection is 5:
             stop_counter = True
             print("Closing the application. Thank you for using PyCalc Vista!")
