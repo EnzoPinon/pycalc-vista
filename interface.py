@@ -6,3 +6,7 @@ class UserInterface:
         except:
             selection = 'null'
             return selection 
+
+    def selectionInput(self):
+        choice = input("Please select the number of you choice: ")
+        return choice
