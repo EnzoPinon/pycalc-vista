@@ -18,14 +18,47 @@ while not stop_counter is True:
     
     if not selection is 'null':
         if selection is 1:
-            # Addition
+            #input number
+            first_num = new_ui.numberInput()
+            sec_num =  new_ui.numberInput()
+            #validate
+            num1 = new_ui.numberValidator(first_num)
+            num2 = new_ui.numberValidator(sec_num)
+
+            if num1 is 'invalid' or num2 is 'invalid':
+                print("one of the inputs are invalid. Please try again.")
         if selection is 2:
-            # subtraction
+            #input number
+            first_num = new_ui.numberInput()
+            sec_num =  new_ui.numberInput()
+            #validate
+            num1 = new_ui.numberValidator(first_num)
+            num2 = new_ui.numberValidator(sec_num)
+
+            if num1 is 'invalid' or num2 is 'invalid':
+                print("one of the inputs are invalid. Please try again.")
         if selection is 3:
-            # multiplication
+            #input number
+            first_num = new_ui.numberInput()
+            sec_num =  new_ui.numberInput()
+            #validate
+            num1 = new_ui.numberValidator(first_num)
+            num2 = new_ui.numberValidator(sec_num)
+
+            if num1 is 'invalid' or num2 is 'invalid':
+                print("one of the inputs are invalid. Please try again.")
         if selection is 4:
-            # division
+            #input number
+            first_num = new_ui.numberInput()
+            sec_num =  new_ui.numberInput()
+            #validate
+            num1 = new_ui.numberValidator(first_num)
+            num2 = new_ui.numberValidator(sec_num)
+
+            if num1 is 'invalid' or num2 is 'invalid':
+                print("one of the inputs are invalid. Please try again.")
         if selection is 5:
-            # quit application
-        else:
+            stop_counter = True
+            print("Closing the application. Thank you for using PyCalc Vista!")
+        if selection > 5 or selection < 1:
             print("Selection is invalid. Please try again.")
