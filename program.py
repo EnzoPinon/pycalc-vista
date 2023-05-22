@@ -27,6 +27,8 @@ while not stop_counter is True:
 
             if num1 is 'invalid' or num2 is 'invalid':
                 print("one of the inputs are invalid. Please try again.")
+            else:
+                result = calc.add(num1, num2)
         if selection is 2:
             #input number
             first_num = new_ui.numberInput()
