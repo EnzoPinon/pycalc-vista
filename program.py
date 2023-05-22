@@ -29,6 +29,7 @@ while not stop_counter is True:
                 print("one of the inputs are invalid. Please try again.")
             else:
                 result = calc.add(num1, num2)
+                new_ui.showResults(selection, num1, num2, result)
         if selection is 2:
             #input number
             first_num = new_ui.numberInput()
@@ -40,7 +41,8 @@ while not stop_counter is True:
             if num1 is 'invalid' or num2 is 'invalid':
                 print("one of the inputs are invalid. Please try again.")
             else:
-                calc.subtract(num1, num2)
+                result = calc.subtract(num1, num2)
+                new_ui.showResults(selection, num1, num2, result)
         if selection is 3:
             #input number
             first_num = new_ui.numberInput()
@@ -52,7 +54,8 @@ while not stop_counter is True:
             if num1 is 'invalid' or num2 is 'invalid':
                 print("one of the inputs are invalid. Please try again.")
             else:
-                calc.multiply(num1, num2)
+                result = calc.multiply(num1, num2)
+                new_ui.showResults(selection, num1, num2, result)
         if selection is 4:
             #input number
             first_num = new_ui.numberInput()
