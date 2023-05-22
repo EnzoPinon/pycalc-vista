@@ -3,7 +3,7 @@ class UserInterface:
         try:
             selection = int(choice)
             return selection
-        except:
+        except ValueError:
             selection = 'null'
             return selection 
 
