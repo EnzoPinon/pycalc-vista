@@ -8,6 +8,7 @@ class UserInterface:
             return selection 
 
     def selectionInput(self):
+        print("\n**Choices**\n(1) Addition [+]\n(2) Subtraction [-]\n(3) Multiplication [*]\n(4) Division [/]\n(5) Close the application\n")
         choice = input("Please select the number of you choice: ")
         return choice
     

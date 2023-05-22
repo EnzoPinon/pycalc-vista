@@ -9,7 +9,6 @@ stop_counter = False
 print("=============================\nPyCalc\n-Vista Edition-\n\nBy EnzoPinon\n=============================\n")
 
 while not stop_counter is True:
-    print("\n**Choices**\n(1) Addition [+]\n(2) Subtraction [-]\n(3) Multiplication [*]\n(4) Division [/]\n(5) Close the application\n")
     choice = new_ui.selectionInput()
     selection = new_ui.selectionValidator(choice)
 
