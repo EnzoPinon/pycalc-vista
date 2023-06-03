@@ -12,14 +12,6 @@ class pycalc(Calculator):
             result = 'error'
             return result
     
-    def rooted(self, num1, num2):
-        try:
-            result = num1 ** (1.0/num2)
-            return result
-        except ValueError:
-            result = 'error'
-            return result
-    
     def calculate_all(self, num1, num2):
 
         try:
@@ -28,11 +20,6 @@ class pycalc(Calculator):
         except ZeroDivisionError:
             quotient = 'error'
         
-        try:
-            nth_root = num1 ** (1.0/num2)
-        except ValueError:
-            nth_root = 'error'
-        
         sum = num1 + num2
         diff = num1 - num2
         product = num1 * num2
@@ -40,4 +27,4 @@ class pycalc(Calculator):
             result = num1 ** num2
         except ZeroDivisionError:
             result = 'error'
-        ui.print_all(num1, num2, sum, diff, product, quotient, nth_root, result)
+        ui.print_all(num1, num2, sum, diff, product, quotient, result)
