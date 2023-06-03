@@ -46,7 +46,7 @@ class UserInterface:
         print("Calculation complete! Thank you for using PyCalc Vista!")
     
     def print_all(self, num1, num2, sum, diff, product, quotient, nth_root, result):
-        if quotient is 'error' or nth_root is 'error':
+        if quotient is 'error' or nth_root is 'error' or result is 'error':
             return print("You may have given a negative input that isn't allowed by nth rooting or divided by zero. Please try again.")
         else:
             print("============================================")

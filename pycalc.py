@@ -5,8 +5,12 @@ ui = UserInterface()
 
 class pycalc(Calculator):
     def powered(self, num1, num2):
-        result = num1 ** num2
-        return result
+        try:
+            result = num1 ** num2
+            return result
+        except ZeroDivisionError:
+            result = 'error'
+            return result
     
     def rooted(self, num1, num2):
         try:
@@ -32,5 +36,8 @@ class pycalc(Calculator):
         sum = num1 + num2
         diff = num1 - num2
         product = num1 * num2
-        result = num1 ** num2
+        try:
+            result = num1 ** num2
+        except ZeroDivisionError:
+            result = 'error'
         ui.print_all(num1, num2, sum, diff, product, quotient, nth_root, result)

@@ -83,7 +83,10 @@ while not stop_counter is True:
                 print("one of the inputs are invalid. Please try again.")
             else:
                 result = vista.powered(num1, num2)
-        
+                if result is 'error':
+                    print("Number cannot be divided by zero nor zero cannot divide itself. try again.")
+                else:
+                    new_ui.showResults(selection, num1, num2, result)
         if selection is 6:
              #input number
             first_num = new_ui.numberInput()
@@ -96,6 +99,10 @@ while not stop_counter is True:
                 print("one of the inputs are invalid. Please try again.")
             else:
                 result = vista.rooted(num1, num2)
+                if result is 'error':
+                    print("Number cannot be divided by zero nor zero cannot divide itself. try again.")
+                else:
+                    new_ui.showResults(selection, num1, num2, result)
         
         if selection is 7:
              #input number
