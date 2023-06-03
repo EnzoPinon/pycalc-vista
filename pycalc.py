@@ -14,7 +14,7 @@ class pycalc(Calculator):
     
     def rooted(self, num1, num2):
         try:
-            result = num1 ** 1/num2
+            result = num1 ** (1.0/num2)
             return result
         except ValueError:
             result = 'error'
@@ -29,7 +29,7 @@ class pycalc(Calculator):
             quotient = 'error'
         
         try:
-            nth_root = num1 ** 1/num2
+            nth_root = num1 ** (1.0/num2)
         except ValueError:
             nth_root = 'error'
         
