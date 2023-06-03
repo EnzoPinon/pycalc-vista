@@ -35,8 +35,30 @@ class UserInterface:
             print("Method: Multiplication\n")
         if selection is 4:
             print("Method: Division\n")
+        if selection is 5:
+            print("Method: Powering (n raised to nth)")
+        if selection is 6:
+            print("Method: rooting (nth root of n)")
         print("First number: ", num1, "\n")
         print("Second number: ", num2, "\n")
         print("Result: ", result, "\n\n")
         print("============================================\n\n")
         print("Calculation complete! Thank you for using PyCalc Vista!")
+    
+    def print_all(self, num1, num2, sum, diff, product, quotient, nth_root, result):
+        if quotient is 'error' or nth_root is 'error':
+            return print("You may have given a negative input that isn't allowed by nth rooting or divided by zero. Please try again.")
+        else:
+            print("============================================")
+            print("-Results-\n\n")
+            print("Method: ALL METHODS")
+            print("First number: ", num1, "\n")
+            print("Second number: ", num2, "\n")
+            print("Sum: ", sum, "\n")
+            print("Difference: ", diff, "\n")
+            print("Product: ", product, "\n")
+            print("Quotient: ", quotient, "\n")
+            print("Powered to nth: ", result, "\n")
+            print("nth root of n: ", nth_root, "\n\n")
+            print("============================================\n\n")
+            print("Calculation complete! Thank you for using PyCalc Vista!")
