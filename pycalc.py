@@ -1,5 +1,7 @@
 from calculate import Calculator
-import math
+from interface import UserInterface
+
+ui = UserInterface()
 
 class pycalc(Calculator):
     def powered(self, num1, num2):
@@ -30,4 +32,5 @@ class pycalc(Calculator):
         sum = num1 + num2
         diff = num1 - num2
         product = num1 * num2
-        return quotient, nth_root, sum, diff, product
+        result = num1 ** num2
+        ui.print_all(num1, num2, sum, diff, product, quotient, nth_root, result)
