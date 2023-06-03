@@ -1,7 +1,7 @@
-from calculate import Calculator
+from pycalc import pycalc
 from interface import UserInterface
 
-calc = Calculator()
+vista = pycalc()
 new_ui = UserInterface()
 
 stop_counter = False
@@ -27,7 +27,7 @@ while not stop_counter is True:
             if num1 is 'invalid' or num2 is 'invalid':
                 print("one of the inputs are invalid. Please try again.")
             else:
-                result = calc.add(num1, num2)
+                result = vista.add(num1, num2)
                 new_ui.showResults(selection, num1, num2, result)
         if selection is 2:
             #input number
@@ -40,7 +40,7 @@ while not stop_counter is True:
             if num1 is 'invalid' or num2 is 'invalid':
                 print("one of the inputs are invalid. Please try again.")
             else:
-                result = calc.subtract(num1, num2)
+                result = vista.subtract(num1, num2)
                 new_ui.showResults(selection, num1, num2, result)
         if selection is 3:
             #input number
@@ -53,7 +53,7 @@ while not stop_counter is True:
             if num1 is 'invalid' or num2 is 'invalid':
                 print("one of the inputs are invalid. Please try again.")
             else:
-                result = calc.multiply(num1, num2)
+                result = vista.multiply(num1, num2)
                 new_ui.showResults(selection, num1, num2, result)
         if selection is 4:
             #input number
@@ -66,13 +66,13 @@ while not stop_counter is True:
             if num1 is 'invalid' or num2 is 'invalid':
                 print("one of the inputs are invalid. Please try again.")
             else:
-                result = calc.divide(num1, num2)
+                result = vista.divide(num1, num2)
                 if result is 'error':
                     print("Number cannot be divided by zero nor zero cannot divide itself. try again.")
                 else:
                     new_ui.showResults(selection, num1, num2, result)
-        if selection is 5:
+        if selection is 8:
             stop_counter = True
             print("Closing the application. Thank you for using PyCalc Vista!")
-        if selection > 5 or selection < 1:
+        if selection > 8 or selection < 1:
             print("Selection is invalid. Please try again.")
